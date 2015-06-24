@@ -1,4 +1,7 @@
-<div>
+<table>
+    <tr>
+    <td>
+        <div>
   <div class="column">
     <h3>Today</h3>
     <ol>
@@ -6,8 +9,9 @@
         <li><%= item.first %>: <%= item.last %></li>
       <% end %>
     </ol>
-  </div>
-  <div class="column">
+  </div></td>
+  <td>
+      <div class="column">
     <h3>Tomorrow</h3>
     <ol>
       <% @tomorrow.each do |item| %>
@@ -15,4 +19,6 @@
       <% end %>
     </ol>
   </div>
-</div>
+  </td>
+    </tr>
+</table>
