@@ -1,4 +1,7 @@
 require_relative 'config/environment'
+require 'json'
+require 'rest_client'
+require 'pry'
 
 class App < Sinatra::Base
   get '/' do
@@ -21,7 +24,7 @@ class App < Sinatra::Base
     # TODO: we can probably get the listings with something like:
     # JSON.parse(RestClient.get('http://reddit.com/.json'))
 
-    @listings = []
+    @listings = JSON.parse(RestClient.get('http://reddit.com/.json'))
 
     erb :reddit
   end
