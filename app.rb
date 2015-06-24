@@ -23,7 +23,7 @@ class App < Sinatra::Base
   get '/reddit' do
     # TODO: we can probably get the listings with something like:
     # JSON.parse(RestClient.get('http://reddit.com/.json'))
-    @listing = JSON.parse(RestClient.get('http://reddit.com/.json'))
+    @listings = JSON.parse(RestClient.get('http://reddit.com/.json'))
     #stuff1 = stuff[1]
     #stuff = stuff1[1]
     #stuff1=hash1["children"]
