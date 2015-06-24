@@ -55,7 +55,6 @@ class App < Sinatra::Base
 
     erb :schedule
   
-  end
 end
 
 get '/team' do
