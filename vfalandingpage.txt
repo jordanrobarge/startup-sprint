@@ -1,0 +1,2 @@
+<h1>Welcome, VFA Fellows!</h1>
+<img src="https://media.licdn.com/media/p/4/005/069/05a/1ca47fa.png">
