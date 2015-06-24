@@ -1,0 +1,1 @@
+<input type="text" name="inputText" id="inputText" placeholder="Enter your email" value="@Request["inputText"]" autofocus style="display: inline-block;" />
