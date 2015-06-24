@@ -19,6 +19,21 @@ class App < Sinatra::Base
     erb :team
   end
 
+  get '/VFAsplash' do
+    @error = params['error']
+    erb :VFAsplash
+  end
+
+  get '/youtube' do
+    @error = params['error']
+    erb :youtube
+  end
+
+  get '/rainbow' do
+    @error = params['error']
+    erb :rainbow
+  end
+
   post '/subscribe' do
     @full_name = params[:full_name]
     @email = params[:email]
