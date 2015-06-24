@@ -58,7 +58,7 @@ class App < Sinatra::Base
   end
 end
 
-get '/teams' do
+get '/team' do
     "Hello World"
   end
 end
