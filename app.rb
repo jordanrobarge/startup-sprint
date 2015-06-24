@@ -8,6 +8,16 @@ class App < Sinatra::Base
     @error = params['error']
     erb :home
   end
+  
+  get '/home' do
+    @error = params['error']
+    erb :home
+  end
+  
+  get '/team' do
+    @error = params['error']
+    erb :team
+  end
 
   post '/subscribe' do
     @full_name = params[:full_name]
@@ -57,7 +67,4 @@ class App < Sinatra::Base
   
 end
 
-get '/team' do
-    "Hello World"
-  end
 end
