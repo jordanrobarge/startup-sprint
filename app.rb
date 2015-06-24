@@ -26,9 +26,7 @@ class App < Sinatra::Base
     stuff = JSON.parse(RestClient.get('http://reddit.com/.json'))
     stuff1 = stuff[1]
     hash1 = stuff1[1]
-    hash1["children"]
-
-    @listings = JSON.parse(RestClient.get('http://reddit.com/.json'))
+    @listings=hash1["children"]
 
     erb :reddit
   end
