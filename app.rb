@@ -1,4 +1,7 @@
 require_relative 'config/environment'
+require 'json'
+require 'rest_client'
+require 'pry'
 
 class App < Sinatra::Base
   get '/' do
