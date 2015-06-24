@@ -54,5 +54,11 @@ class App < Sinatra::Base
     ]
 
     erb :schedule
+  
+  end
+end
+
+get '/teams' do
+    "Hello World"
   end
 end
